@@ -1,6 +1,8 @@
 const express = require("express");
+const cors = require('cors');
 
 const app = express();
+const app = cors();
 
 app.use(express.static(`${__dirname}/public`))
 
